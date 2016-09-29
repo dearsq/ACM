@@ -11,6 +11,7 @@
  ************************************************************************/
 
 #include <stdio.h>
+#include "../dbg.h"
 
 
 int
@@ -18,7 +19,6 @@ main ()
 {
   int getSum (int a, int b)
   {
-
     int Carry = 0;
 
     int a_fun = a;
@@ -34,7 +34,8 @@ main ()
 		b_fun = Carry;
       }
 
-    return a_fun;
+    return a_fun ;
 
   }
+  log_info("%d",getSum(4,5));
 }
